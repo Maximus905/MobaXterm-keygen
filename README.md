@@ -25,7 +25,12 @@ PS C:\Users\DoubleSine\Github\MobaXterm-Keygen> .\MobaXterm-Keygen.py "DoubleSin
 ```
 
 Then copy `Custom.mxtpro` to `C:\Program Files (x86)\Mobatek\MobaXterm`.
-
+## Running script using docker
+```
+docker run -it --rm --name my-running-script -v ${PWD}:/usr/src/myapp -w /usr/src/myapp python:3 python MobaXterm-Keygen.py UserName Version
+Example:
+docker run -it --rm --name my-running-script -v ${PWD}:/usr/src/myapp -w /usr/src/myapp python:3 python MobaXterm-Keygen.py JonDoe 12.1
+```
 ## Screenshot
 
 ![](pic0.png)
